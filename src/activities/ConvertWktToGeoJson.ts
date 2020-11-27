@@ -26,6 +26,10 @@ export interface ConvertWktToGeoJsonOutputs {
  */
 export class ConvertWktToGeoJson implements IActivityHandler {
     execute(inputs: ConvertWktToGeoJsonInputs): ConvertWktToGeoJsonOutputs {
+        if (!inputs.wktGeometry) {
+            throw new Error("wktGeometry is required");
+        }
+
         const geoJson = parse(inputs.wktGeometry);
         return {
             result: geoJson,

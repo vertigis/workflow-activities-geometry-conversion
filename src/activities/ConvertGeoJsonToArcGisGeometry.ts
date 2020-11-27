@@ -26,7 +26,17 @@ export interface ConvertGeoJsonToArcGisGeometryOutputs {
  */
 export class ConvertGeoJsonToArcGisGeometry implements IActivityHandler {
     execute(inputs: ConvertGeoJsonToArcGisGeometryInputs): ConvertGeoJsonToArcGisGeometryOutputs {
+        if (!inputs.geoJSON) {
+            throw new Error("geoJSON is required");
+        }
+
         const agsGeometry = convert(inputs.geoJSON);
+
+        // The convert will just result in an empty object if it isn't valid GeoJSON
+        if (Object.keys(agsGeometry).length === 0) {
+            throw new Error("geoJSON was not valid");
+        }
+
         return {
             result: agsGeometry,
         };
