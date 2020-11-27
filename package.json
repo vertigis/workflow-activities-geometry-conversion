@@ -1,0 +1,38 @@
+{
+    "name": "@vertigis/workflow-geometry-conversion-activities",
+    "private": true,
+    "version": "0.0.0-semantically-released",
+    "description": "Geometry conversion activities for Geocortex Workflow",
+    "license": "MIT",
+    "author": "VertiGIS",
+    "scripts": {
+        "build": "vertigis-workflow-sdk build",
+        "generate": "vertigis-workflow-sdk generate",
+        "start": "vertigis-workflow-sdk start"
+    },
+    "dependencies": {
+        "terraformer-arcgis-parser": "^1.1.0",
+        "terraformer-wkt-parser": "^1.2.1"
+    },
+    "devDependencies": {
+        "@geocortex/workflow": "5.18.0",
+        "@vertigis/workflow-sdk": "1.0.1",
+        "conventional-changelog-conventionalcommits": "^4.4.0",
+        "husky": "^4.3.0",
+        "prettier": "^2.1.2",
+        "pretty-quick": "^3.1.0",
+        "semantic-release": "^17.2.1",
+        "typescript": "^4.0.2"
+    },
+    "browserslist": [
+        "last 2 chrome versions",
+        "last 2 edge versions",
+        "last 2 firefox versions",
+        "last 2 safari versions"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    }
+}
