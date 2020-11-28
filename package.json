@@ -11,10 +11,10 @@
         ]
     },
     "scripts": {
-        "build": "yarn workspaces build",
+        "build": "yarn workspaces run build",
         "copy-build": "node ./copyBuild.js",
         "prepack": "yarn copy-build",
-        "test": "yarn workspaces test"
+        "test": "yarn workspaces run test"
     },
     "dependencies": {},
     "devDependencies": {
