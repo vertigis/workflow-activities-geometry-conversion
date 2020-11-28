@@ -1,42 +1,32 @@
 {
-    "name": "@vertigis/workflow-geometry-conversion-activities",
+    "name": "@vertigis/workflow-community-activities",
     "private": true,
-    "version": "0.0.0-semantically-released",
-    "description": "Geometry conversion activities for Geocortex Workflow",
+    "version": "0.1.0",
+    "description": "Community maintained activities for Geocortex Workflow",
     "license": "MIT",
     "author": "VertiGIS",
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
     "scripts": {
-        "build": "vertigis-workflow-sdk build",
-        "generate": "vertigis-workflow-sdk generate",
-        "start": "vertigis-workflow-sdk start",
-        "test": "jest"
+        "build": "yarn workspaces build",
+        "copy-build": "node ./copyBuild.js",
+        "prepack": "yarn copy-build",
+        "test": "yarn workspaces test"
     },
-    "dependencies": {
-        "terraformer-arcgis-parser": "^1.1.0",
-        "terraformer-wkt-parser": "^1.2.1"
-    },
+    "dependencies": {},
     "devDependencies": {
-        "@babel/core": "^7.12.9",
-        "@babel/preset-env": "^7.12.7",
-        "@babel/preset-typescript": "^7.12.7",
-        "@geocortex/workflow": "5.18.0",
-        "@types/jest": "^26.0.15",
-        "@vertigis/workflow-sdk": "1.0.1",
-        "babel-jest": "^26.6.3",
         "conventional-changelog-conventionalcommits": "^4.4.0",
+        "copyfiles": "^2.4.1",
+        "cross-env": "^7.0.2",
+        "cross-spawn": "^7.0.3",
         "husky": "^4.3.0",
-        "jest": "^26.6.3",
-        "prettier": "^2.1.2",
+        "prettier": "^2.1.1",
         "pretty-quick": "^3.1.0",
-        "semantic-release": "^17.2.1",
-        "typescript": "^4.0.2"
+        "semantic-release": "^17.2.1"
     },
-    "browserslist": [
-        "last 2 chrome versions",
-        "last 2 edge versions",
-        "last 2 firefox versions",
-        "last 2 safari versions"
-    ],
     "husky": {
         "hooks": {
             "pre-commit": "pretty-quick --staged"

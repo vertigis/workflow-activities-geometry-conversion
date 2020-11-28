@@ -25,7 +25,9 @@ export interface ConvertGeoJsonToArcGisGeometryOutputs {
  * @description Converts a GeoJSON geometry to an ArcGIS geometry
  */
 export class ConvertGeoJsonToArcGisGeometry implements IActivityHandler {
-    execute(inputs: ConvertGeoJsonToArcGisGeometryInputs): ConvertGeoJsonToArcGisGeometryOutputs {
+    execute(
+        inputs: ConvertGeoJsonToArcGisGeometryInputs
+    ): ConvertGeoJsonToArcGisGeometryOutputs {
         if (!inputs.geoJSON) {
             throw new Error("geoJSON is required");
         }
