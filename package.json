@@ -1,7 +1,7 @@
 {
     "name": "@vertigis/workflow-community-activities",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.0.0-semantically-released",
     "description": "Community maintained activities for Geocortex Workflow",
     "license": "MIT",
     "author": "VertiGIS",
@@ -13,14 +13,12 @@
     "scripts": {
         "build": "yarn workspaces run build",
         "copy-build": "node ./copyBuild.js",
-        "prepack": "yarn copy-build",
         "test": "yarn workspaces run test"
     },
     "dependencies": {},
     "devDependencies": {
         "conventional-changelog-conventionalcommits": "^4.4.0",
         "copyfiles": "^2.4.1",
-        "cross-env": "^7.0.2",
         "cross-spawn": "^7.0.3",
         "husky": "^4.3.0",
         "prettier": "^2.1.1",

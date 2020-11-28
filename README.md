@@ -1,5 +1,7 @@
 ## Geocortex Workflow Community Activities
 
+![CI/CD](https://github.com/geocortex/vertigis-workflow-community-activities/workflows/CI/CD/badge.svg)
+
 This project contains community maintained activity packs for Geocortex Workflow.
 
 This monorepo contains independent Geocortex Workflow SDK projects in the `packages` folder.

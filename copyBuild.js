@@ -2,6 +2,8 @@ const spawn = require("cross-spawn");
 const fs = require("fs");
 const path = require("path");
 
+fs.copyFileSync("./README.md", "./build/README.md");
+
 const packagesRootDir = path.join(__dirname, "packages");
 
 const packageDirs = fs
