@@ -5,7 +5,7 @@ import { convert } from "terraformer-arcgis-parser";
 export interface ConvertGeoJsonToArcGisGeometryInputs {
     /**
      * @displayName GeoJSON
-     * @description A GeoJSON Geometry object.
+     * @description A GeoJSON geometry object.
      * @required
      */
     geoJSON: any;

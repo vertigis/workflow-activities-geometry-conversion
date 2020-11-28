@@ -3,3 +3,5 @@
 export * from "./activities/ConvertGeoJsonToArcGisGeometry";
 
 export * from "./activities/ConvertWktToGeoJson";
+
+export * from "./activities/ConvertArcGisGeometryToGeoJson";
