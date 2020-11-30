@@ -1,5 +1,7 @@
 ## Geometry Conversion Activities
 
+![CI/CD](https://github.com/geocortex/workflow-activities-geometry-conversion/workflows/CI/CD/badge.svg)
+
 This project contains activities for performing geometry conversion operations.
 
 This project was bootstrapped with the [Geocortex Workflow SDK](https://github.com/geocortex/vertigis-workflow-sdk). Before you can use this activity pack in the [Geocortex Workflow Designer](https://apps.geocortex.com/workflow/designer/), you will need to [register the activity pack](https://developers.geocortex.com/docs/workflow/sdk-web-overview#register-the-activity-pack).
