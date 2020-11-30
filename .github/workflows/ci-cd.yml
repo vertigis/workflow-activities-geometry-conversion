@@ -56,7 +56,7 @@ jobs:
 
             - run: npm run build
 
-            - run: cp package.json build
+            - run: cp LICENSE package.json README.md build
 
             - name: Release 🚀
               env:
