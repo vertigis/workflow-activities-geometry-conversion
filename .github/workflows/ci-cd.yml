@@ -24,11 +24,11 @@ jobs:
               with:
                   node-version: 14.x
 
-            - run: yarn
+            - run: npm install
 
-            - run: yarn run build
+            - run: npm run build
 
-            - run: yarn run test
+            - run: npm run test
 
     release:
         runs-on: ubuntu-latest
@@ -52,9 +52,11 @@ jobs:
               with:
                   node-version: 14.x
 
-            - run: yarn
+            - run: npm install
 
-            - run: yarn run build
+            - run: npm run build
+
+            - run: cp package.json build
 
             - name: Release 🚀
               env:
