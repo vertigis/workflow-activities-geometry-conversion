@@ -1,10 +1,14 @@
 {
     "name": "@geocortex/workflow-activities-geometry-conversion",
-    "private": true,
     "version": "0.0.0-semantically-released",
     "description": "Geometry conversion activities for Geocortex Workflow",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geocortex/workflow-activities-geometry-conversion.git"
+    },
     "license": "MIT",
     "author": "VertiGIS",
+    "homepage": "https://github.com/geocortex/workflow-activities-geometry-conversion#readme",
     "scripts": {
         "build": "vertigis-workflow-sdk build",
         "generate": "vertigis-workflow-sdk generate",
