@@ -1,6 +1,7 @@
 # Geometry Conversion Activities
 
-![CI/CD](https://github.com/geocortex/workflow-activities-geometry-conversion/workflows/CI/CD/badge.svg) ![npm](https://img.shields.io/npm/v/@geocortex/workflow-activities-geometry-conversion)
+[![CI/CD](https://github.com/geocortex/workflow-activities-geometry-conversion/workflows/CI/CD/badge.svg)](https://github.com/geocortex/workflow-activities-geometry-conversion/actions) 
+[![npm](https://img.shields.io/npm/v/@geocortex/workflow-activities-geometry-conversion)](https://www.npmjs.com/package/@geocortex/workflow-activities-geometry-conversion)
 
 This project contains activities for performing geometry conversion operations in a [Geocortex Workflow](https://www.geocortex.com/products/geocortex-workflow/).
 
