@@ -44,10 +44,7 @@ jobs:
                   persist-credentials: false
 
             - name: Fetch test1
-              run: git status
-
-            - name: Fetch test2
-              run: git fetch origin
+              run: git fetch --depth=1 origin
 
             # Pulls all tags (needed for semantic release to correctly version)
             - name: Fetch git tags
