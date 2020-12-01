@@ -45,7 +45,7 @@ jobs:
 
             # Pulls all tags (needed for semantic release to correctly version)
             - name: Fetch git tags
-              run: git fetch --depth=1 --prune-tags origin +refs/tags/*:refs/tags/*
+              run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
             - name: Use Node.js 14
               uses: actions/setup-node@v1
