@@ -9,6 +9,14 @@
     "license": "MIT",
     "author": "VertiGIS",
     "homepage": "https://github.com/geocortex/workflow-activities-geometry-conversion#readme",
+    "keywords": [
+        "VertiGIS",
+        "Geocortex",
+        "Workflow",
+        "GeoJSON",
+        "ArcGIS",
+        "GIS"
+    ],
     "scripts": {
         "build": "vertigis-workflow-sdk build",
         "generate": "vertigis-workflow-sdk generate",
