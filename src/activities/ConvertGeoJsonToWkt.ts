@@ -23,6 +23,8 @@ export interface ConvertGeoJsonToWktOutputs {
  * @displayName Convert GeoJSON to WKT
  * @category Geometry Conversion
  * @description Converts a GeoJSON geometry to WKT
+ * @clientOnly
+ * @unsupportedApps GMV
  */
 export class ConvertGeoJsonToWkt implements IActivityHandler {
     /** Perform the execution logic of the activity. */
