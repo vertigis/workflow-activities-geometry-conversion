@@ -1,7 +1,7 @@
 {
     "name": "@geocortex/workflow-activities-geometry-conversion",
     "version": "0.0.0-semantically-released",
-    "description": "Geometry conversion activities for Geocortex Workflow",
+    "description": "Geometry conversion activities for VertiGIS Studio Workflow",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/geocortex/workflow-activities-geometry-conversion.git"
@@ -11,7 +11,7 @@
     "homepage": "https://github.com/geocortex/workflow-activities-geometry-conversion#readme",
     "keywords": [
         "VertiGIS",
-        "Geocortex",
+        "VertiGIS Studio",
         "Workflow",
         "GeoJSON",
         "ArcGIS",
