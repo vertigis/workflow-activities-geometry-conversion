@@ -33,10 +33,15 @@ export class ConvertArcGisGeometryToGeoJson implements IActivityHandler {
             throw new Error("geometry is required");
         }
 
-        const agsGeometry = arcgisToGeoJSON(inputs.geometry);
+        const geoJson = arcgisToGeoJSON(inputs.geometry);
+
+        // The conversion will just result in an empty object if the input isn't valid
+        if (Object.keys(geoJson).length === 0) {
+            throw new Error("geometry was not valid");
+        }
 
         return {
-            result: agsGeometry,
+            result: geoJson,
         };
     }
 }

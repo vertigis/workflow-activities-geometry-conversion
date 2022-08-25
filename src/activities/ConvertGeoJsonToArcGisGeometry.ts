@@ -36,7 +36,7 @@ export class ConvertGeoJsonToArcGisGeometry implements IActivityHandler {
 
         const agsGeometry = geojsonToArcGIS(inputs.geoJSON);
 
-        // The convert will just result in an empty object if it isn't valid GeoJSON
+        // The conversion will just result in an empty object if the input isn't valid
         if (Object.keys(agsGeometry).length === 0) {
             throw new Error("geoJSON was not valid");
         }
