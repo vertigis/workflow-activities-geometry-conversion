@@ -1,5 +1,5 @@
 import type { IActivityHandler } from "@geocortex/workflow/runtime/IActivityHandler";
-import { parse } from "terraformer-arcgis-parser";
+import { arcgisToGeoJSON } from "@terraformer/arcgis";
 
 /** An interface that defines the inputs of the activity. */
 export interface ConvertArcGisGeometryToGeoJsonInputs {
@@ -33,7 +33,7 @@ export class ConvertArcGisGeometryToGeoJson implements IActivityHandler {
             throw new Error("geometry is required");
         }
 
-        const agsGeometry = parse(inputs.geometry);
+        const agsGeometry = arcgisToGeoJSON(inputs.geometry);
 
         return {
             result: agsGeometry,
