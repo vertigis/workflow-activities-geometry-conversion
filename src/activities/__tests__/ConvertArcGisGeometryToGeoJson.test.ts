@@ -24,7 +24,7 @@ describe("ConvertArcGisGeometryToGeoJson", () => {
     it("throws if geometry input is not valid ArcGIS geometry", () => {
         const activity = new ConvertArcGisGeometryToGeoJson();
         expect(() => activity.execute({ geometry: { foo: "baz" } })).toThrow(
-            "Unknown type:"
+            "geometry was not valid"
         );
     });
 });

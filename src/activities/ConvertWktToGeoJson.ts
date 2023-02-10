@@ -1,5 +1,5 @@
 import type { IActivityHandler } from "@geocortex/workflow/runtime/IActivityHandler";
-import { parse } from "terraformer-wkt-parser";
+import { wktToGeoJSON } from "@terraformer/wkt";
 
 /** An interface that defines the inputs of the activity. */
 export interface ConvertWktToGeoJsonInputs {
@@ -32,7 +32,7 @@ export class ConvertWktToGeoJson implements IActivityHandler {
             throw new Error("wktGeometry is required");
         }
 
-        const geoJson = parse(inputs.wktGeometry);
+        const geoJson = wktToGeoJSON(inputs.wktGeometry);
         return {
             result: geoJson,
         };
