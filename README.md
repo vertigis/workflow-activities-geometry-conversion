@@ -17,7 +17,7 @@ To use this activity pack in [VertiGIS Studio Workflow Designer](https://apps.ve
    - URL: The URL to this activity pack manifest
      - Use https://unpkg.com/@vertigis/workflow-activities-geometry-conversion/activitypack.json for the latest version
      - Use https://unpkg.com/@vertigis/workflow-activities-geometry-conversion@2.0.0/activitypack.json for a specific version
-        - Use https://localhost:5000/activitypack.json for a local development version
+     - Use https://localhost:5000/activitypack.json for a local development version
    - Title: Your desired title
    - Tags: Must include `geocortex-workflow-activity-pack`
 1. Reload [VertiGIS Studio Workflow Designer](https://apps.vertigisstudio.com/workflow/designer/)
