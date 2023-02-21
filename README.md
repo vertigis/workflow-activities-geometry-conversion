@@ -1,7 +1,7 @@
 # Geometry Conversion Activities
 
-[![CI/CD](https://github.com/geocortex/workflow-activities-geometry-conversion/workflows/CI/CD/badge.svg)](https://github.com/geocortex/workflow-activities-geometry-conversion/actions) 
-[![npm](https://img.shields.io/npm/v/@geocortex/workflow-activities-geometry-conversion)](https://www.npmjs.com/package/@geocortex/workflow-activities-geometry-conversion)
+[![CI/CD](https://github.com/vertigis/workflow-activities-geometry-conversion/workflows/CI/CD/badge.svg)](https://github.com/vertigis/workflow-activities-geometry-conversion/actions) 
+[![npm](https://img.shields.io/npm/v/@vertigis/workflow-activities-geometry-conversion)](https://www.npmjs.com/package/@vertigis/workflow-activities-geometry-conversion)
 
 This project contains activities for performing geometry conversion operations in a [VertiGIS Studio Workflow](https://www.vertigisstudio.com/products/vertigis-studio-workflow/).
 
@@ -15,15 +15,16 @@ To use this activity pack in [VertiGIS Studio Workflow Designer](https://apps.ve
    - Purpose: `Ready To Use`
    - API: `JavaScript`
    - URL: The URL to this activity pack manifest
-     - Use https://unpkg.com/@geocortex/workflow-activities-geometry-conversion/activitypack.json for the latest version
-     - Use https://unpkg.com/@geocortex/workflow-activities-geometry-conversion@0.1.0/activitypack.json for a specific version
+     - Use https://unpkg.com/@vertigis/workflow-activities-geometry-conversion/activitypack.json for the latest version
+     - Use https://unpkg.com/@vertigis/workflow-activities-geometry-conversion@2.0.0/activitypack.json for a specific version
+     - Use https://localhost:5000/activitypack.json for a local development version
    - Title: Your desired title
    - Tags: Must include `geocortex-workflow-activity-pack`
 1. Reload [VertiGIS Studio Workflow Designer](https://apps.vertigisstudio.com/workflow/designer/)
 
 ## Development
 
-This project was bootstrapped with the [VertiGIS Studio Workflow SDK](https://github.com/geocortex/vertigis-workflow-sdk). Before you can use this activity pack in the [VertiGIS Studio Workflow Designer](https://apps.vertigisstudio.com/workflow/designer/), you will need to [register the activity pack](https://developers.vertigisstudio.com/docs/workflow/sdk-web-overview#register-the-activity-pack).
+This project was bootstrapped with the [VertiGIS Studio Workflow SDK](https://github.com/vertigis/vertigis-workflow-sdk). Before you can use this activity pack in the [VertiGIS Studio Workflow Designer](https://apps.vertigisstudio.com/workflow/designer/), you will need to [register the activity pack](https://developers.vertigisstudio.com/docs/workflow/sdk-web-overview#register-the-activity-pack).
 
 ## Available Scripts
 
