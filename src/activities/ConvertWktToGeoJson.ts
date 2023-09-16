@@ -24,7 +24,7 @@ export interface ConvertWktToGeoJsonOutputs {
  * @category Geometry Conversion
  * @description Converts a WKT geometry to GeoJSON
  * @clientOnly
- * @unsupportedApps GMV
+ * @supportedApps EXB, GWV, GVH, WAB
  */
 export class ConvertWktToGeoJson implements IActivityHandler {
     execute(inputs: ConvertWktToGeoJsonInputs): ConvertWktToGeoJsonOutputs {

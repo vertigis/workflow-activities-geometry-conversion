@@ -23,7 +23,7 @@ export interface ConvertArcGisGeometryToGeoJsonOutputs {
  * @category Geometry Conversion
  * @description Converts an ArcGIS geometry to a GeoJSON geometry
  * @clientOnly
- * @unsupportedApps GMV
+ * @supportedApps EXB, GWV, GVH, WAB
  */
 export class ConvertArcGisGeometryToGeoJson implements IActivityHandler {
     execute(
