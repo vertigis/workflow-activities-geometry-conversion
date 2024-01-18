@@ -18,13 +18,13 @@ describe("ConvertGeoJsonToArcGisGeometry", () => {
     it("throws if geoJSON input missing", () => {
         const activity = new ConvertGeoJsonToArcGisGeometry();
         expect(() => activity.execute({ geoJSON: undefined })).toThrow(
-            "geoJSON is required"
+            "geoJSON is required",
         );
     });
     it("throws if geoJSON input is not valid GeoJSON", () => {
         const activity = new ConvertGeoJsonToArcGisGeometry();
         expect(() => activity.execute({ geoJSON: { foo: "baz" } })).toThrow(
-            "geoJSON was not valid"
+            "geoJSON was not valid",
         );
     });
 });
