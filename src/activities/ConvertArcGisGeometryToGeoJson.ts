@@ -1,4 +1,4 @@
-import type { IActivityHandler } from "@geocortex/workflow/runtime/IActivityHandler";
+import type { IActivityHandler } from "@vertigis/workflow/IActivityHandler";
 import { arcgisToGeoJSON } from "@terraformer/arcgis";
 
 /** An interface that defines the inputs of the activity. */
@@ -27,13 +27,13 @@ export interface ConvertArcGisGeometryToGeoJsonOutputs {
  */
 export class ConvertArcGisGeometryToGeoJson implements IActivityHandler {
     execute(
-        inputs: ConvertArcGisGeometryToGeoJsonInputs
+        inputs: ConvertArcGisGeometryToGeoJsonInputs,
     ): ConvertArcGisGeometryToGeoJsonOutputs {
         if (!inputs.geometry) {
             throw new Error("geometry is required");
         }
 
-        const geoJson = arcgisToGeoJSON(inputs.geometry);
+        const geoJson = arcgisToGeoJSON(inputs.geometry) as object;
 
         // The conversion will just result in an empty object if the input isn't valid
         if (Object.keys(geoJson).length === 0) {

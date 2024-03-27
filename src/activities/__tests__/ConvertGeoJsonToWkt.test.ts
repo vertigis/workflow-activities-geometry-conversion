@@ -14,13 +14,13 @@ describe("ConvertGeoJsonToWkt", () => {
     it("throws if geoJSON input missing", () => {
         const activity = new ConvertGeoJsonToWkt();
         expect(() => activity.execute({ geoJSON: undefined })).toThrow(
-            "geoJSON is required"
+            "geoJSON is required",
         );
     });
     it("throws if geoJSON input is not valid GeoJSON", () => {
         const activity = new ConvertGeoJsonToWkt();
         expect(() => activity.execute({ geoJSON: { foo: "baz" } })).toThrow(
-            "Unknown Type:"
+            "Unknown Type:",
         );
     });
 });
